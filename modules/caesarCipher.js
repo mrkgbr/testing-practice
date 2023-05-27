@@ -1,12 +1,11 @@
-const plain = "abcdefghijklmnopqrstuvwxyz";
-const cipher = "bcdefghijklmnopqrstuvwxyza";
-
-const plainArr = plain.split("");
-const cipherArr = cipher.split("");
-
 function caesarCipher(str) {
+  const plain = "abcdefghijklmnopqrstuvwxyz";
+  const cipher = "bcdefghijklmnopqrstuvwxyza";
+  const plainArr = plain.split("");
+  const cipherArr = cipher.split("");
   const strArr = str.split("");
   let newStr = "";
+
   strArr.forEach((element) => {
     const index = plainArr.indexOf(element);
     if (index == -1) {
